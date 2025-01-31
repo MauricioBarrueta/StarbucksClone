@@ -1,0 +1,19 @@
+<section>
+    <div class="extras-title center-txt">
+        <p class="title bold-text">Endless Extras</p>
+        <span class="subtitle">Joining Starbucks® Rewards means unlocking access to benefits like quick and easy ordering, tasty Rewards and—yes, free coffee.</span>
+    </div>
+    
+    <div class="card-list">
+        <div class="card text-center" *ngFor="let content of cardContent; let i = index">
+            <img src="{{content.src}}" width="112" height="112">
+            <div class="card-body">
+                <p class="bold-text">{{content.title}}</p>
+                <p class="card-text" [innerHTML]="content.text"></p>
+                <button class="extras-link" id="open_modal" type="button" data-bs-toggle="modal" data-bs-target="#modal" (click)="selectedIndex = i">Learn more</button>                  
+            </div> 
+        </div>        
+    </div>
+</section>
+<!-- Modal -->
+<app-modal [index]="selectedIndex"></app-modal>

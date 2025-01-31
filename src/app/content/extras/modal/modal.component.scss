@@ -1,0 +1,45 @@
+.modal-dialog {
+    width: 420px !important; height: 420px; max-height: 420px; 
+    .modal-content {   
+        padding: 1.5rem;
+        .modal-header {
+            position: relative; padding: 0 0 1em 0;
+            .btn-close { position: absolute; right: 0; font-size: 14px; }
+        }
+        .modal-body {     
+            .carousel-indicators {
+                position: relative; z-index: 1;
+                margin: 0 auto;
+                button {
+                    width: 13px; height: 13px;
+                    background-color: rgba($color: #000000, $alpha: .85);
+                    border-radius: 50% !important; padding-inline: 0 !important; margin: 0 7px;                   
+                }
+            }
+
+            .carousel-control-prev, .carousel-control-next {
+                height: fit-content; top: 92%; z-index: 5;
+                filter: invert(100%);       
+            }
+            .carousel-control-prev { left: 18%; } .carousel-control-next { right: 18%; }
+
+            .carousel-inner {
+                .carousel-item {
+                    img { width: 100%; scale: 1.1; }
+                    .inner-content {
+                        padding: 1em 0 !important;
+                        .title { font-size: 18px; margin: 1rem 0 !important; }
+                        span { font-size: 15px; } 
+                    }                   
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .inner-content {
+        .title { font-size: 16px !important; }
+        span { font-size: 13px; } 
+    } 
+}

@@ -1,0 +1,30 @@
+<div class="modal" id="modal" tabindex="-1" aria-hidden="true">    
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content center-txt">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-0">
+                <div id="modal-carousel" class="carousel slide" data-bs-ride="false"> 
+                    <div class="carousel-inner">
+                      <div [ngClass]="i == 0 ? 'carousel-item active' : 'carousel-item'" *ngFor="let option of carouselContent[index]; let i = index">
+                        <img class="d-block" src="{{option.src}}">
+                        <div class="inner-content">
+                            <p class="title noto-font bold-text">{{option.title}}</p>
+                            <span>{{option.text}}</span>
+                        </div>                
+                      </div> 
+                    </div> 
+
+                    <div class="carousel-indicators d-flex">
+                      <button data-bs-target="#modal-carousel" [ngClass]="i == 0 ? 'active' : ''" *ngFor="let item of carouselContent[index]; let i = index" 
+                        aria-current="true" attr.data-bs-slide-to="{{i}}" attr.aria-label="Slide {{i}}">
+                      </button>          
+                    </div> 
+                    <button class="carousel-control-prev fs-18" type="button" data-bs-target="#modal-carousel" data-bs-slide="prev">&#xf053;</button>
+                    <button class="carousel-control-next fs-18" type="button" data-bs-target="#modal-carousel" data-bs-slide="next">&#xf054;</button>                                                                     
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

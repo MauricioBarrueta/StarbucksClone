@@ -1,0 +1,28 @@
+<nav class="navbar navbar-expand-lg">
+  <a class="navbar-brand" href="https://www.starbucks.com/" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/sco/d/d3/Starbucks_Corporation_Logo_2011.svg" width="50" height="50">
+  </a>  
+  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">    
+    <div class="offcanvas-body">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0" [ngClass]="screenW <= 1024 ? 'fs-18' : 'fs-14'">
+        <li class="nav-item">
+          <a class="nav-link mt-1 active" aria-current="page" href="#">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link mt-1" href="#">Rewards</a>
+        </li>
+        <li class="nav-item" [ngClass]="screenW <= 1024 ? 'pb-4' : ''">
+          <a class="nav-link mt-1" href="#">Gift Cards</a>
+        </li>
+      </ul>
+      <form class="container-fluid d-flex" [ngClass]="screenW <= 1024 ? 'justify-content-start' : 'justify-content-end'">
+        <a class="find-store fs-14 decor-none bold-text" href="https://www.starbucks.com/store-locator" target="_blank">&#xf3c5;&nbsp; Find a store</a>
+        <button class="btn btn-outline-secondary me-2 fs-14" type="button">Sign in</button>
+        <a class="join-btn btn btn-outline-secondary fs-14" type="button" href="https://www.starbucks.com/account/create" target="_blank">Join now</a>
+      </form>
+    </div>
+  </div>
+</nav>

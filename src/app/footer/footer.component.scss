@@ -1,0 +1,30 @@
+section {    
+    .info-txt {
+        padding: 3em;
+        .info { letter-spacing: -0.5px; }
+        .columns {
+            justify-content: space-between; align-items: center; flex-wrap: wrap;
+            .rows {
+                width: 48%; height: fit-content;
+                .r-title {
+                    font-size: 16px; text-transform: uppercase; letter-spacing: .5px; 
+                    color: rgba($color: #000000, $alpha: .65);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .info-txt {
+        padding: 2em 1em !important;
+        p { font-size: 13px !important; }
+
+        .columns {
+            flex-direction: row;
+            .rows {
+                width: 100% !important; margin: 15px 0 !important;
+            }
+        }
+    }    
+}

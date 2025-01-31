@@ -1,0 +1,55 @@
+<section>
+    <div class="menu d-flex">
+        <div class="menu-column" [ngClass]="screenW <= 1024 ? 'dropdown' : ''">
+            <p class="title fs-18 mb-5" aria-expanded="false" data-bs-toggle="dropdown" role="button">About Us</p>
+            <ul [ngClass]="screenW <= 1024 ? 'dropdown-menu' : ''">
+                <li class="menu-item"><a href="https://www.starbucks.com/about-us/" target="_blank" [ngClass]="screenW <= 1024 ? 'dropdown-item' : ''">Our Company</a></li>
+                <li class="menu-item"><a href="https://www.starbucks.com/coffee/" target="_blank" [ngClass]="screenW <= 1024 ? 'dropdown-item' : ''">Our Coffee</a></li>
+                <li class="menu-item"><a href="https://about.starbucks.com/" target="_blank" [ngClass]="screenW <= 1024 ? 'dropdown-item' : ''">About Starbucks</a></li>
+                <li class="menu-item"><a href="https://archive.starbucks.com/" target="_blank" [ngClass]="screenW <= 1024 ? 'dropdown-item' : ''">Starbucks Archive</a></li>
+                <li class="menu-item"><a href="https://investor.starbucks.com/" target="_blank" [ngClass]="screenW <= 1024 ? 'dropdown-item' : ''">Investor Relations</a></li>
+                <li class="menu-item"><a href="https://customerservice.starbucks.com/" target="_blank" [ngClass]="screenW <= 1024 ? 'dropdown-item' : ''">Customer Service</a></li>
+                <li class="menu-item"><a href="https://www.starbucks.com/contact/" target="_blank" [ngClass]="screenW <= 1024 ? 'dropdown-item' : ''">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="menu-column" [ngClass]="screenW <= 1024 ? 'dropdown' : ''">
+            <p class="title fs-18 mb-5" aria-expanded="false" data-bs-toggle="dropdown" role="button">Careers</p>
+            <ul [ngClass]="screenW <= 1024 ? 'dropdown-menu' : ''">
+                <li class="menu-item"><a href="https://www.starbucks.com/careers/working-at-starbucks/culture-and-values/" target="_blank" [ngClass]="screenW <= 1024 ? 'dropdown-item' : ''">Culture and Values</a></li>
+                <li class="menu-item"><a href="https://about.starbucks.com/inclusion-diversity-belonging/" target="_blank" [ngClass]="screenW <= 1024 ? 'dropdown-item' : ''">Inclusion, Diversity, & Belonging</a></li>
+                <li class="menu-item"><a href="https://www.starbucks.com/careers/working-at-starbucks/education/" target="_blank" [ngClass]="screenW <= 1024 ? 'dropdown-item' : ''">College Achievement Plan</a></li>
+                <li class="menu-item"><a href="https://alumni.starbucks.com/" target="_blank" [ngClass]="screenW <= 1024 ? 'dropdown-item' : ''">Alumni Community</a></li>
+                <li class="menu-item"><a href="https://www.starbucks.com/careers/" target="_blank" [ngClass]="screenW <= 1024 ? 'dropdown-item' : ''">U.S. Careers</a></li>
+                <li class="menu-item"><a href="https://www.starbucks.com/careers/international-careers/" target="_blank" [ngClass]="screenW <= 1024 ? 'dropdown-item' : ''">International Careers</a></li>
+            </ul>
+        </div>
+        <div class="menu-column" [ngClass]="screenW <= 1024 ? 'dropdown' : ''">
+            <p class="title fs-18 mb-5" aria-expanded="false" data-bs-toggle="dropdown" role="button">Social Impact</p>
+            <ul [ngClass]="screenW <= 1024 ? 'dropdown-menu' : ''">
+                <li class="menu-item"><a href="https://about.starbucks.com/communities/" target="_blank" [ngClass]="screenW <= 1024 ? 'dropdown-item' : ''">Communities</a></li>
+                <li class="menu-item"><a href="https://about.starbucks.com/the-starbucks-foundation/" target="_blank" [ngClass]="screenW <= 1024 ? 'dropdown-item' : ''">Starbucks Foundation</a></li>
+                <li class="menu-item"><a href="https://about.starbucks.com/sustainability/" target="_blank" [ngClass]="screenW <= 1024 ? 'dropdown-item' : ''">Sustainability</a></li>
+                <li class="menu-item"><a href="https://www.starbucks.com/responsibility/reporting-hub/" target="_blank" [ngClass]="screenW <= 1024 ? 'dropdown-item' : ''">Environmental and Social Impact Reporting</a></li>
+            </ul>
+        </div>
+        <div class="menu-column" [ngClass]="screenW <= 1024 ? 'dropdown' : ''">
+            <p class="title fs-18 mb-5" aria-expanded="false" data-bs-toggle="dropdown" role="button">For Business Partners</p>
+            <ul [ngClass]="screenW <= 1024 ? 'dropdown-menu' : ''">
+                <li class="menu-item"><a href="https://www.starbucks.com/business/landlord-faq/" target="_blank" [ngClass]="screenW <= 1024 ? 'dropdown-item' : ''">Landlord Support Center</a></li>
+                <li class="menu-item"><a href="https://www.starbucks.com/business/suppliers/" target="_blank" [ngClass]="screenW <= 1024 ? 'dropdown-item' : ''">Suppliers</a></li>
+                <li class="menu-item"><a href="https://www.starbuckscardb2b.com/" target="_blank" [ngClass]="screenW <= 1024 ? 'dropdown-item' : ''">Corporate Gift Card Sales</a></li>
+                <li class="menu-item"><a href="https://www.nestlecoffeepartnerssl.com/our-brands/we-proudly-serve-starbucks-coffee-program" target="_blank" [ngClass]="screenW <= 1024 ? 'dropdown-item' : ''">Office and Foodservice Coffe</a></li>
+            </ul>
+        </div>
+        <div class="menu-column" [ngClass]="screenW <= 1024 ? 'dropdown' : ''">
+            <p class="title fs-18 mb-5" aria-expanded="false" data-bs-toggle="dropdown" role="button">Order and Pick Up</p>
+            <ul [ngClass]="screenW <= 1024 ? 'dropdown-menu' : ''">
+                <li class="menu-item"><a href="https://www.starbucks.com/rewards/mobile-apps/" target="_blank" [ngClass]="screenW <= 1024 ? 'dropdown-item' : ''">Order on the App</a></li>
+                <li class="menu-item"><a href="https://www.starbucks.com/menu" target="_blank" [ngClass]="screenW <= 1024 ? 'dropdown-item' : ''">Order on the Web</a></li>
+                <li class="menu-item"><a href="https://www.starbucks.com/stores-and-ordering/delivery/" target="_blank" [ngClass]="screenW <= 1024 ? 'dropdown-item' : ''">Delivery</a></li>
+                <li class="menu-item"><a href="https://www.starbucks.com/stores-and-ordering/" target="_blank" [ngClass]="screenW <= 1024 ? 'dropdown-item' : ''">Order and Pick Up Options</a></li>
+                <li class="menu-item"><a href="https://athome.starbucks.com/?utm_source=starbucks.com&utm_medium=referral&utm_campaign=footer" target="_blank" [ngClass]="screenW <= 1024 ? 'dropdown-item' : ''">Explore and Find Coffee for Home</a></li>
+            </ul>
+        </div>
+    </div>
+</section>

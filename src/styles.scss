@@ -1,1 +1,103 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* { 
+    padding: 0; margin: 0; 
+    box-sizing: border-box; font-family: "Noto Sans", serif, FontAwesome;
+    &::before, &::after { box-sizing: border-box; }
+}
+/* Color Palette */
+:root {
+    --mediumJungleGreen: #1e3932; --philippineGreen: #008248; --chineseWhite: #d4e9e2; --cultured: #f1f8f6; 
+    --alabaster: #f3f1e7; --gold: #cba258;
+}
+body {
+    width: 100%; height: fit-content; position: relative;
+    padding-right: 0 !important;
+}
+/* Modal .show */
+body.modal-open { overflow-y: hidden !important; }
+
+h3, button { color: rgba($color: #000000, $alpha: .85); }
+.steps-title, .extras-title, .payment-title, .rewards-title { margin-bottom: 50px !important; }
+
+a { 
+    color: var(--black) !important; 
+    &:hover { text-decoration: none; }
+}
+.step_link, .extras-link, .footer-link { color: var(--philippineGreen) !important; }
+.step_link, .footer-link {
+    span { font-size: 9px; }
+}
+
+button, .join-btn, .radius-btn {
+    font-weight: bold !important;
+    border-radius: 20px !important; padding-inline: 1em !important; 
+}
+.btn-success { 
+    background-color: var(--philippineGreen) !important; transition: all .25s;
+    &:hover { opacity: .95; }
+}
+
+/* Text Format Classes */
+h3, .nav-link { text-transform: uppercase; font-weight: bold; }
+.header-title { font-size: 35px; line-height: 1.5; }
+
+/* Section Title - Subtitle */
+p, .title { font-size: 28px; } 
+.subtitle { font-size: 14px; letter-spacing: 1px; }
+
+.center-txt { text-align: center; } 
+.bold-text { font-weight: bold !important;  }
+/* Font-size classes */
+.fs-14 { font-size: 14px; }
+.fs-18 { font-size: 18px; }
+.decor-none { text-decoration: none; }
+
+/* margin - padding - border: 0 */
+h3, .carousel-indicators, .carousel-indicators button, ul { margin: 0; }
+.navbar, .navbar-toggler, .card, .carousel-indicators button, .dropdown-menu, .modal-header { border: 0; }
+
+ul { list-style: none; }
+
+/* Background classes */
+.cultured { background-color: var(--cultured); }
+.chinedeWh { background-color: var(--chineseWhite) !important; }
+.mjGreen { background-color: var(--mediumJungleGreen); }
+.offcanvas-backdrop { background-color: transparent !important; }
+
+/* Cards */
+.card-list {        
+    display: flex; justify-content: center; flex-wrap: wrap; gap: 25px;
+    .card {
+        width: 350px !important; align-items: center;
+        .card-body {
+            p:nth-child(1) { font-size: 18px !important; }
+            p:nth-child(2) { font-size: 15px; font-weight: 500; }
+            button {
+                background-color: transparent; border: 0;
+                text-decoration: underline;
+            }            
+        }
+    }
+}
+
+/* General Media Styles */
+@media screen and (max-width: 1024px) {
+    .navbar { 
+        padding: 1em !important; border-bottom: 2px solid var(--alabaster);
+        .navbar-brand {
+            img { width: 40px; height: 40px; }
+        }  
+    }    
+
+    .title { font-size: 24px; }
+
+    /* Cards */
+    .card-list {
+        flex-direction: column; gap: 5px;
+        .card {
+            width: 100% !important; flex-direction: row;
+            text-align: left !important;
+        }
+    }
+}

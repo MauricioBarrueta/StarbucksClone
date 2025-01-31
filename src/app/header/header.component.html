@@ -1,0 +1,15 @@
+<app-navbar></app-navbar>
+
+<div class="banner d-flex mjGreen" [ngClass]="isSticky ? 'sticky' : ''" (scroll) = "onScroll()">
+    <h3>Starbucks&reg; Rewards</h3>
+    <a class="join-btn decor-none fs-14" href="{{joinPath}}" target="_blank" *ngIf="screenW <= 1024">join in the app</a>
+</div>
+
+<section class="header-hero chinedeWh">
+    <div class="text-content">
+        <h3 class="header-title">Free Coffee<br>is a tap away</h3>
+        <p>Join now to start earning Rewards</p>
+        <button class="btn btn-success" [innerHTML]="screenW <= 1024 ? 'join in the app' : 'Join now'"></button>
+        <p>Or <a href="{{joinPath}}" target="_blank" [innerHTML]="screenW <= 1024 ? 'Or join online' : 'join in the app'"></a> for the best experience</p>
+    </div>
+</section>
