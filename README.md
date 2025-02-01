@@ -1,3 +1,13 @@
+🇲🇽 Este sitio web replica el módulo '/rewards' de la página oficial de Starbucks, entre las funciones se encuentran un carrusel de imágenes con el diseño y funcionalidad iguales al del sitio original, una ventana emergente dinámica, en donde el contenido cambia dependiendo el botón seleccionado, diseño adaptable acorde al sitio original, entre otras funciones que fueron replicadas, simulando un proyecto en donde únicamente se desarrolla el lado front end.
+
+🇺🇸 This website replicates the '/rewards' module of the official Starbucks website, some functions are an image carousel with the same design and functionality as the original site, a dynamic popup window, where the content changes depending on the selected button, adaptive design according to the original site, among other functions that were replicated, simulating a project where only the front end side is developed.
+
+🔗 https://starbucksclone-96cee.web.app/rewards
+
+
+![Starbucks](https://github.com/user-attachments/assets/0eb9a708-5e77-4cea-9826-d65bf301a8d2)
+
+
 # StarbucksClone
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.3.
