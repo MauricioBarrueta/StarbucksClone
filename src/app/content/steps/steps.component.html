@@ -1,6 +1,6 @@
 <section>
     <div class="steps-title center-txt">
-        <p class="bold-text">Getting started is easy</p>
+        <p class="title bold-text">Getting started is easy</p>
         <span class="subtitle">Earn Stars and get rewarded in a few easy steps.</span>
     </div>
 
@@ -9,7 +9,7 @@
             <img src="{{imgPath}}/{{content.img}}" width="50" height="50">
             <div class="card-body">
                 <p class="bold-text" [innerHTML]="screenW <= 1024 && i === 0 ? 'Download the Starbucks® app' : content.title"></p>
-                <p class="card-text" [innerHTML]="content.text"></p>
+                <p class="card-text" [ngClass]="screenW <= 1024 ? 'fs-13' : 'fs-16'" [innerHTML]="content.text"></p>
             </div>
           </div>
     </div>

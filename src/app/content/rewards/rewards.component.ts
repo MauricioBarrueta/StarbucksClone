@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { environment } from '../../../environments/environment.development';
 import { CommonModule } from '@angular/common';
 
@@ -8,7 +8,17 @@ import { CommonModule } from '@angular/common';
   templateUrl: './rewards.component.html',
   styleUrl: './rewards.component.scss'
 })
-export class RewardsComponent {
+export class RewardsComponent implements OnInit {
+
+  screenW!: number
+  @HostListener('window:resize')
+  onResize() {
+    this.screenW = window.innerWidth
+  }
+      
+  ngOnInit(): void {
+    this.screenW = window.innerWidth  
+  }  
 
   imgPath: string = environment.rewardsImgPath
 

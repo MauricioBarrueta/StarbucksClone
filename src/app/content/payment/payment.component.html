@@ -1,20 +1,20 @@
 <section class="cultured">
     <div class="payment-title center-txt">
         <p class="title bold-text">Cash or card, you earn Stars</p>
-        <span class="subtitle">No matter how you pay, you can earn Stars with your morning coffee. Those Stars add up to (really delicious) Rewards.</span>
+        <span class="subtitle" [ngClass]="screenW <= 1024 ? 'fs-13' : 'fs-14'">No matter how you pay, you can earn Stars with your morning coffee. Those Stars add up to (really delicious) Rewards.</span>
     </div>
 
     <div class="payment-row">              
         <div class="card-list">
             <div style="margin-right: 50px;">
-                <p class="title bold-text">1<span>&#xf005;</span> per dollar</p>
-                <span class="subtitle">Pay as you go</span>  
+                <p class="bold-text">1<span>&#xf005;</span> per dollar</p>
+                <span class="subtitle" [ngClass]="screenW <= 1024 ? 'fs-13' : 'fs-14'">Pay as you go</span>  
             </div>            
             <div class="card" *ngFor="let content of row1;">
                 <img src="{{content.src}}" width="112" height="158">
                 <div class="card-body">
-                    <p class="bold-text">{{content.title}}</p>
-                    <p class="card-text" [innerHTML]="content.text"></p>
+                    <p class="card-title bold-text" [ngClass]="screenW <= 1024 ? 'fs-16' : 'fs-18'">{{content.title}}</p>
+                    <p class="card-text" [ngClass]="screenW <= 768 ? 'fs-13' : 'fs-15'" [innerHTML]="content.text"></p>
                 </div>
             </div>
         </div>
@@ -23,14 +23,14 @@
     <div class="payment-row">               
         <div class="card-list">
             <div style="margin-right: 30px;">
-                <p class="title bold-text">2<span>&#xf005;</span> per dollar</p>
-                <span class="subtitle">Add funds in the app</span> 
+                <p class="bold-text">2<span>&#xf005;</span> per dollar</p>
+                <span class="subtitle" [ngClass]="screenW <= 1024 ? 'fs-13' : 'fs-14'">Add funds in the app</span> 
             </div>            
             <div class="card" *ngFor="let content of row2">
                 <img src="{{content.src}}" width="112" height="158">
                 <div class="card-body">
-                    <p class="bold-text">{{content.title}}</p>
-                    <p class="card-text" [innerHTML]="content.text"></p>
+                    <p class="card-title bold-text" [ngClass]="screenW <= 1024 ? 'fs-16' : 'fs-18'">{{content.title}}</p>
+                    <p class="card-text" [ngClass]="screenW <= 768 ? 'fs-13' : 'fs-15'" [innerHTML]="content.text"></p>
                 </div>
             </div>
         </div>

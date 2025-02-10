@@ -2,7 +2,7 @@
     <div class="favs-title text-center cultured">
         <p class="title bold-text">Get your favorites for free</p>
         <div id="carousel" class="carousel slide carousel-fade chinedeWh">
-            <div class="carousel-indicators d-flex cultured">
+            <div class="carousel-indicators d-flex cultured indicators">
               <button data-bs-target="#carousel" [ngClass]="i == 0 ? 'active' : ''" *ngFor="let item of content; let i = index" aria-current="true" 
                 attr.data-bs-slide-to="{{i}}" attr.aria-label="Slide {{i}}">{{item.no}}<span> &#xf005;</span>
               </button>        
@@ -11,8 +11,8 @@
               <div class="d-flex chinedeWh" [ngClass]="i == 0 ? 'carousel-item active' : 'carousel-item'" *ngFor="let option of content; let i = index">
                 <img src="{{option.src}}" class="d-block">
                 <div class="inner-content">
-                    <p class="title noto-font bold-text">{{option.title}}</p>
-                    <span>{{option.text}}</span>
+                    <p class="noto-font bold-text" [ngClass]="screenW <= 1024 ? 'fs-18' : 'fs-24'" id="test">{{option.title}}</p>
+                    <span [ngClass]="screenW <= 1024 ? 'fs-15' : 'fs-16'">{{option.text}}</span>
                 </div>                
               </div> 
             </div>                

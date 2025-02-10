@@ -10,6 +10,7 @@
     --mediumJungleGreen: #1e3932; --philippineGreen: #008248; --chineseWhite: #d4e9e2; --cultured: #f1f8f6; 
     --alabaster: #f3f1e7; --gold: #cba258;
 }
+html, body { max-width: 100%; overflow-x: hidden; }
 body {
     width: 100%; height: fit-content; position: relative;
     padding-right: 0 !important;
@@ -43,14 +44,20 @@ h3, .nav-link { text-transform: uppercase; font-weight: bold; }
 .header-title { font-size: 35px; line-height: 1.5; }
 
 /* Section Title - Subtitle */
-p, .title { font-size: 28px; } 
-.subtitle { font-size: 14px; letter-spacing: 1px; }
+.title { font-size: 28px; } 
+.subtitle { letter-spacing: 1px; }
 
 .center-txt { text-align: center; } 
-.bold-text { font-weight: bold !important;  }
+.bold-text { font-weight: bold !important; }
+
 /* Font-size classes */
+.fs-12 { font-size: 12px; }
+.fs-13 { font-size: 13px; }
 .fs-14 { font-size: 14px; }
+.fs-15 { font-size: 15px; }
+.fs-16 { font-size: 16px; }
 .fs-18 { font-size: 18px; }
+.fs-24 { font-size: 24px; }
 .decor-none { text-decoration: none; }
 
 /* margin - padding - border: 0 */
@@ -69,10 +76,9 @@ ul { list-style: none; }
 .card-list {        
     display: flex; justify-content: center; flex-wrap: wrap; gap: 25px;
     .card {
-        width: 350px !important; align-items: center;
+        width: 350px; align-items: center;
         .card-body {
-            p:nth-child(1) { font-size: 18px !important; }
-            p:nth-child(2) { font-size: 15px; font-weight: 500; }
+            .card-text {  font-weight: 500; } 
             button {
                 background-color: transparent; border: 0;
                 text-decoration: underline;
@@ -83,6 +89,9 @@ ul { list-style: none; }
 
 /* General Media Styles */
 @media screen and (max-width: 1024px) {
+    .title { font-size: 24px; }
+
+    /* Navbar */
     .navbar { 
         padding: 1em !important; border-bottom: 2px solid var(--alabaster);
         .navbar-brand {
@@ -90,14 +99,26 @@ ul { list-style: none; }
         }  
     }    
 
-    .title { font-size: 24px; }
-
     /* Cards */
     .card-list {
         flex-direction: column; gap: 5px;
         .card {
-            width: 100% !important; flex-direction: row;
+            width: 100%; flex-direction: row;
             text-align: left !important;
         }
     }
+}
+@media screen and (max-width: 768px) {
+    .navbar {
+        .show { width: 80% !important; top: 0% !important; }
+        .container-fluid {
+            flex-wrap: wrap; 
+            .find-store { 
+                flex-basis: 100%; margin-inline: 0 !important; margin-bottom: 10px !important;
+            }
+        }
+    }
+    .card {       
+        .card-body { padding: 0 0 0 1em; }
+    }    
 }

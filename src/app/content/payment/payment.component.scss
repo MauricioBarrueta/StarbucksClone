@@ -14,7 +14,7 @@ section {
             padding-inline: 2.5rem;
             .card:nth-child(2){ margin-left: 55px; }
             .card {
-                width: 422px !important; align-items: start; flex-direction: row;
+                width: 422px; align-items: start; flex-direction: row;
                 background-color: transparent;
                 .card-body { padding-top: 0 !important; }
             }
@@ -26,13 +26,10 @@ section {
 @media screen and (max-width: 1024px) {
     section {
         padding-bottom: 4em;
-
         .payment-title {
             width: 100% !important; margin-bottom: 20px !important;
-            .subtitle { font-size: 13px; }
         }
         .payment-row {
-            .title { font-size: 18px !important; }
             .card-list {
                 padding-inline: 1em !important;
                 .card {
@@ -42,4 +39,17 @@ section {
             }
         }
     }
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        .payment-row { 
+            padding-inline: 1em; 
+            .card-list {
+                .card { width: fit-content; }
+            }
+        }
+    }
+    
+    
 }

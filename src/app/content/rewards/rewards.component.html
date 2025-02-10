@@ -1,24 +1,24 @@
 <section>
-    <div class="content">
+    <div class="content chinedeWh center-txt">
         <div class="rewards-title center-txt">
             <p class="title bold-text">Keep the Rewards Coming</p>
-            <span class="subtitle">The Rewards don't stop at your morning coffee. Join Starbucks® Rewards and unlock perks from our partners, all while earning more Stars.</span>
+            <span class="subtitle" [ngClass]="screenW <= 1024 ? 'fs-13' : 'fs-14'">The Rewards don't stop at your morning coffee. Join Starbucks® Rewards and unlock perks from our partners, all while earning more Stars.</span>
         </div>        
         <div class="card-list">
             <div class="card text-center" *ngFor="let content of cardContent">
                 <img src="{{content.src}}" width="190" height="85">
                 <div class="card-body">
-                    <p class="card-text" [innerHTML]="content.text"></p>
+                    <p class="card-text" [ngClass]="screenW <= 1024 ? 'fs-13' : 'fs-16'" [innerHTML]="content.text"></p>
                 </div>
             </div>
         </div>
-        <a class="btn btn-success radius-btn mt-3" href="https://www.starbucks.com/account/create" target="_blank">Join Starbucks® Rewards</a>      
+        <a class="btn btn-success radius-btn mt-3" [ngClass]="screenW <= 1024 ? 'fs-14' : 'fs-15'" href="https://www.starbucks.com/account/create" target="_blank">Join Starbucks® Rewards</a>      
     </div>
 </section>
 
 <div class="questions">
     <div class="text-content">
         <p class="title bold-text">Questions?</p>
-        <span class="subtitle">We want to help in any way we can. You can ask your barista anytime or we’ve answered the most commonly asked terms <a class="step_link" href="https://customerservice.starbucks.com/app/answers/list/p/552" target="_blank">right over here <span>&#xf08e;</span></a></span>
+        <span class="subtitle" [ngClass]="screenW <= 1024 ? 'fs-13' : 'fs-15'">We want to help in any way we can. You can ask your barista anytime or we’ve answered the most commonly asked terms <a class="step_link" href="https://customerservice.starbucks.com/app/answers/list/p/552" target="_blank">right over here <span>&#xf08e;</span></a></span>
     </div>    
 </div>

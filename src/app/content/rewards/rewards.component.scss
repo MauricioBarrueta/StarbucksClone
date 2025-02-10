@@ -3,52 +3,43 @@ section {
     background: url('https://www.starbucks.com/app-assets/844262945b2a8b8cfb29.png') no-repeat top center / cover;
 
     .content {
-        padding: 3em 0; text-align: center;
-        background-color: var(--chineseWhite);
-
+        padding: 3em 0; 
         .card-list {
             gap: 0; justify-content: space-around;
             .card {
-                width: 355px !important;
-                background-color: transparent;
-                .card-body {
-                    p { font-size: 16px !important; }
-                }
+                width: 355px; background-color: transparent;
             }
         }
-        a { font-size: 15px; color: #FFF !important; }       
+        .radius-btn { color: #FFF !important; }       
     }
 }
 
 .questions {
     padding: 6em 6em 8em 15em; 
-    .text-content {
-        width: 635px;
-        span { font-size: 15px; } 
-    }
+    .text-content { width: 635px; }
 }
 
 @media screen and (max-width: 1024px) {
-    .subtitle { font-size: 13px !important; }
-
     section {
         background: none; padding: 0;
         .content {            
             .card-list {
                 padding: 0 1em;
                 .card { 
-                    width: 100% !important; margin-bottom: 15px;
-                    img { width: 112px !important; height: auto !important; }
-                    .card-body {
-                        p { font-size: 13px !important; }
-                    }                
+                    width: 100%; margin-bottom: 15px;
+                    img { width: 112px !important; height: auto !important; }                                   
                 }
             }
-            .radius-btn { font-size: 14px !important; }
         }       
     }
     .questions { 
         padding: 4em 1em; 
         .text-content { width: 100%; }
+    }    
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        .content { padding-inline: 1em; }
     }    
 }

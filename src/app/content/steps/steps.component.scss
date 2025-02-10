@@ -3,10 +3,11 @@ section { padding: 8em 3em; }
 @media screen and (max-width: 1024px) {
     section { 
         padding: 3.5rem 1em; 
-        .steps-title {
-            margin-bottom: 20px !important;
-            p { font-size: 24px; }
-            span { font-size: 14px; letter-spacing: 0; }
-        }        
+        .steps-title { margin-bottom: 20px !important; }   
     }    
+}
+@media screen and (max-width: 768px) {
+    .card-list {
+        .card { margin-bottom: 25px; }
+    }     
 }

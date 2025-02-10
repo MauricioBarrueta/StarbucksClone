@@ -31,11 +31,21 @@
   .header-hero {
     background-position: bottom;
     .text-content {
-      width: fit-content; top: 3%; left: 0; right: 0; margin-inline: auto; 
+      width: fit-content; top: 10%; left: 0; right: 0; margin-inline: auto; 
       text-align: center;
 
       h3 { font-size: 26px; }
       p { font-size: 16px; }
     }
   }  
+}
+
+@media screen and (max-width: 768px) {
+  .banner {
+    h3, a { font-size: 12px; }
+  } 
+  .header-hero { 
+    height: 80vh; 
+    .text-content { top: 5%; }
+  }
 }

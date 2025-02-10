@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { environment } from '../../../environments/environment.development';
 
 @Component({
@@ -8,7 +8,17 @@ import { environment } from '../../../environments/environment.development';
   templateUrl: './favs.component.html',
   styleUrl: './favs.component.scss'
 })
-export class FavsComponent {
+export class FavsComponent implements OnInit {
+
+  screenW!: number
+  @HostListener('window:resize')
+  onResize() {
+    this.screenW = window.innerWidth
+  }
+  
+  ngOnInit(): void {
+    this.screenW = window.innerWidth  
+  }
 
   imgPath: string = environment.favsImgPath
   content: any[] = [

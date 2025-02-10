@@ -5,13 +5,13 @@ section {
             margin-bottom: 30px;
         }
         .carousel {
-            .carousel-indicators, .carousel-item { justify-content: center; align-items: center; }
+            .carousel-indicators, .carousel-item { align-items: center; }
             .carousel-indicators {
                 position: relative; flex-wrap: nowrap; 
                 button {
                     width: 80px; height: 60px;
                     background: transparent; transition: all .25s;
-                    border-radius: 0 !important; padding: 0.75rem 1rem 0 1rem !important; 
+                    border-radius: 0 !important; padding: 0.75rem 1rem 0 1rem; 
                     font-size: 26px; letter-spacing: 1.5px; font-weight: 600 !important; text-indent: 0;
                     span { color: var(--gold); font-size: 9px; }
                 }
@@ -19,13 +19,11 @@ section {
             }
             .carousel-inner {
                 .carousel-item {
-                    flex-wrap: wrap; padding: 1.5rem 0;
+                    flex-wrap: wrap; justify-content: center; padding: 1.5rem 0;
                     img { width: 375px; }
                     .inner-content {
                         width: 375px;
                         text-align: left; margin-left: 60px;
-                        p { font-size: 24px; }
-                        span { font-size: 16px; }
                     }                    
                 }                
             }            
@@ -35,19 +33,39 @@ section {
 
 @media screen and (max-width: 1024px) {
     .title { margin-bottom: 0 !important; }
+    .carousel {
+        .carousel-indicators {
+            justify-content: space-between;
+            button {
+                flex-grow: 1 !important; font-size: 20px !important;            
+            }
+        }
+        .carousel-item {
+            img, .inner-content { width: 100% !important; }
+            .inner-content {
+                margin-left: 0 !important;
+                text-align: center !important;
+                p { margin-bottom: 10px !important; }
+            }
+        } 
+    }           
+}
+
+@media screen and (max-width: 768px) {
     .carousel-indicators {
-        justify-content: space-between !important;
-        button {
-            flex-grow: 1; font-size: 20px !important;            
+        button { 
+            font-size: 16px !important; padding: .35rem 0 0 0 !important;
+            span { font-size: 5px !important; }
         }
     }
-    .carousel-item {
-        img, .inner-content { width: 100% !important; }
-        .inner-content {
-            margin-left: 0 !important;
-            text-align: center !important;
-            p { font-size: 18px !important; margin-bottom: 10px !important; }
-            span { font-size: 15px !important; }
-        }
-    }        
+    .carousel-inner {
+        .carousel-item {
+            padding: 1em !important;
+            .inner-content {
+                margin-top: 35px;
+                p { font-size: 16px; }
+                span { font-size: 14px; }
+            }
+        }  
+    }     
 }
