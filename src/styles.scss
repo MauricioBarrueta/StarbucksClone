@@ -10,7 +10,7 @@
     --mediumJungleGreen: #1e3932; --philippineGreen: #008248; --chineseWhite: #d4e9e2; --cultured: #f1f8f6; 
     --alabaster: #f3f1e7; --gold: #cba258;
 }
-html, body { max-width: 100%; overflow-x: hidden; }
+html, body { max-width: 100%; } //overflow-x: hidden;
 body {
     width: 100%; height: fit-content; position: relative;
     padding-right: 0 !important;
