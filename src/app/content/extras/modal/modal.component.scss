@@ -43,3 +43,6 @@
         span { font-size: 13px; } 
     } 
 }
+@media screen and (max-width: 768px) {
+    .modal-dialog { width: 95% !important; }    
+}
