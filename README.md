@@ -1,11 +1,10 @@
-🇲🇽 Este sitio web replica el módulo Rewards de la página oficial de 'Starbucks', cuenta con un carrusel de imágenes idéntico al del módulo original, una ventana emergente dinámica, cuyo contenido cambia dependiendo el botón seleccionado, diseño adaptable acorde al sitio original, entre otras funciones que fueron copiadas, simulando un proyecto en donde únicamente se desarrolla el lado front end.
+🇲🇽 Sitio web desarrollado con Angular y TypeScript, SCSS y Bootstrap, publicado con Firebase Hosting. Basado en una práctica del sitio Frontend Practice y tomando como referencia el sitio de Starbucks.
 
-🇺🇸 This website replicates the Rewards module of the official 'Starbucks' website, it contains a carousel of images identical to the original module, a dynamic pop-up window, whose content changes depending on the selected button, adaptable design according to the original site, among other functions that were copied, simulating a project where only the front end side is developed.
+🇺🇸 Website developed with Angular and TypeScript, SCSS and Bootstrap, published with Firebase Hosting. Based on a Frontend Practice site and taking as reference the Starbucks site.
 
 🔗 https://starbucksclone-96cee.web.app/rewards
 
-
-![Starbucks](https://github.com/user-attachments/assets/0eb9a708-5e77-4cea-9826-d65bf301a8d2)
+![starbucks](https://github.com/user-attachments/assets/1feb9cd1-d163-4758-b9e0-9e3b810c87b1)
 
 
 # StarbucksClone
