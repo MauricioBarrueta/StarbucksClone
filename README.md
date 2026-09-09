@@ -1,6 +1,6 @@
-🇲🇽 Sitio web desarrollado con Angular y TypeScript, SCSS y Bootstrap, publicado con Firebase Hosting. Basado en una práctica del sitio Frontend Practice y tomando como referencia el sitio de Starbucks.
+🇲🇽 Sitio web desarrollado con Angular y TypeScript, SCSS y Bootstrap, publicado con Firebase Hosting. Basado en una práctica de Frontend Practice y tomando como referencia el sitio de Starbucks.
 
-🇺🇸 Website developed with Angular and TypeScript, SCSS and Bootstrap, published with Firebase Hosting. Based on a Frontend Practice site and taking as reference the Starbucks site.
+🇺🇸 Website developed with Angular and TypeScript, using SCSS and Bootstrap, deployed on Firebase Hosting. Based on a Frontend Practice challenge and inspired by the Starbucks website.
 
 🔗 https://starbucksclone-96cee.web.app/rewards
 
